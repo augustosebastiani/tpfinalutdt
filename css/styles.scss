@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;700&family=Libre+Baskerville:wght@400;700&display=swap');
+
+// Variable overrides first
+$primary: #F96D00;
+$enable-shadows: true;
+$prefix: "mo-";
+
+// Then import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//no estoy logrando cambiar el fontcolor :( //
+
+body {
+  margin: 0;
+  font-family: "Fira Code", monospace;
+  background-color: #5C636E;
+}
+
+header {
+  background-color: #393E46; 
+  height: 75%;
+}
+
+section:last-child {
+  background-color: none;
+  height: 75.9vh;
+}
+
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.header-left{
+    margin-bottom: 5%;
+}
+
+#social-media-container{
+  margin-top: 5%;
+  transition-property: background-color, transform;
+  transition-duration: 1s;
+  transform:translateX()
+}
+#social-media-container:hover{
+  background-color: #F96D00;
+  color: black;
+}
+#ultima-seccion{
+    margin-top: 10%;
+}
+footer {
+  background-color: #F96D00 !important;
+  height: 18vh;
+  padding-top: 9vh;
+}
+
+main > .container-fluid:nth-child(2) {
+  height: 75vh;
+}
+
+header,
+main {
+  padding: 0 8.33vw !important;
+}
+
+.navbar {
+  background-color: none;
+  color: #F96D00;
+}
+
+.form-control.is-valid,
+.was-validated .form-control:valid {
+  border-color: purple;
+  background-image: url(../images/check.png);
+}
+
+textarea {
+  resize: transparent;
+}
+/*this is for the textarea not to be resizable anymore*/
+
+.modal-title {
+  background-color: white;
+  color: black !important;
+  padding: 0 10px !important;
+}
+
+header > div,
+main .container-fluid > div,
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-inner .carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+h1,
+h2 {
+  font-family: "Crimson Text", serif;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 40px;
+  vertical-align: top;
+}
+
+h1,
+h3,
+header p,
+section p {
+  line-height: 125%;
+}
+
+header p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+h3 {
+  font-size: 16px;
+
+  letter-spacing: 5px;
+}
+
+header a,
+section a {
+  font-size: 20px;
+  width: 37.5%;
+
+  display: block;
+
+  padding: 11.5px 0;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 40px;
+  }
+
+  section:last-child {
+    height: auto;
+  }
+
+  .header-right {
+    order: -1;
+  }
+  .header-left {
+    padding-bottom: 10px;
+  }
+}
+.navbar {
+    width: 100%;
+    z-index: 100;
+    background-color:  #393E46 ;
+  };
